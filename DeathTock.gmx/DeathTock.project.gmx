@@ -3,11 +3,87 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\DT - Controller Engine</extension>
+    <extension index="1">extensions\DT - Script Library</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="DT - Controller Manager">
+      <scripts name="Add Controllers">
+        <script>scripts\dt_add_room_con.gml</script>
+        <script>scripts\dt_link_commons.gml</script>
+        <script>scripts\dt_add_con_room.gml</script>
+        <script>scripts\dt_add_persistent_con.gml</script>
+      </scripts>
+      <scripts name="Remove Controllers">
+        <script>scripts\dt_rem_per_controller.gml</script>
+        <script>scripts\dt_rem_rm_controller.gml</script>
+      </scripts>
+      <scripts name="Naming Operations">
+        <script>scripts\dt_get_rooms.gml</script>
+        <script>scripts\dt_get_objects.gml</script>
+      </scripts>
+      <scripts name="Master Control Operations">
+        <script>scripts\dt_create_per_controllers.gml</script>
+        <script>scripts\dt_create_rm_controllers.gml</script>
+        <script>scripts\dt_ut_list_room_con.gml</script>
+        <script>scripts\dt_init_controller_engine.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="DT - Script Library">
+      <scripts name="Utilities">
+        <script>scripts\dt_clock.gml</script>
+        <script>scripts\dt_zero.gml</script>
+        <script>scripts\dt_show_message.gml</script>
+        <script>scripts\dt_full_window.gml</script>
+        <script>scripts\dt_nth_round.gml</script>
+        <script>scripts\dt_track.gml</script>
+        <script>scripts\dt_alarm.gml</script>
+        <script>scripts\dt_count_to_zero.gml</script>
+      </scripts>
+      <scripts name="Rotation">
+        <script>scripts\dt_angle_clamp.gml</script>
+        <script>scripts\dt_rotate_to.gml</script>
+        <script>scripts\dt_convert_angle.gml</script>
+      </scripts>
+      <scripts name="Draw">
+        <script>scripts\dt_rect_outline_width.gml</script>
+      </scripts>
+      <scripts name="Position Checking">
+        <script>scripts\dt_on_line.gml</script>
+        <script>scripts\dt_in_view.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="GAME">
+      <script>scripts\scr_ini.gml</script>
+      <script>scripts\scr_calculate_days.gml</script>
+      <script>scripts\scr_calculate_days_left.gml</script>
+      <script>scripts\scr_globals.gml</script>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <fonts name="DT - Script Library">
+      <font>fonts\fnt_debug_font</font>
+    </fonts>
+  </fonts>
+  <objects name="objects">
+    <objects name="DT - Controller Manager">
+      <object>objects\dt_con_master</object>
+    </objects>
+    <objects name="DT - Script Library">
+      <object>objects\dt_obj_debug</object>
+      <object>objects\dt_obj_timer</object>
+    </objects>
+    <object>objects\obj_master</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_ini</room>
+    <room>rooms\rm_test1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
