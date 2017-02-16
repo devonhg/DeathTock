@@ -2,6 +2,8 @@
     The initiation script for the game
 */
 
+    draw_set_font( fnt_debug_font ); 
+
 /*****
     Scripts
 *****/
@@ -12,3 +14,4 @@
     Controllers
 *****/
     dt_add_persistent_con( obj_master );
+    dt_add_room_con( rm_main_app, obj_rm_main_app ); 

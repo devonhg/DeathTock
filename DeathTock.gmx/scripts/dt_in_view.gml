@@ -13,7 +13,7 @@
 
 var _id = argument[0],
     _xclear = false, _yclear = false,
-    _hbor = 0, _vbor = 0; ;
+    _hbor = 0, _vbor = 0;
     
 if( argument_count > 1 ){
     _hbor = argument[1]; 

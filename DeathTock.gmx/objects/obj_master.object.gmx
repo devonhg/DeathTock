@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message( scr_calculate_days_left() ); 
+            <string>//show_message( scr_calculate_days_left() ); 
 </string>
           </argument>
         </arguments>

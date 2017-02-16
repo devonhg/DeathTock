@@ -6,9 +6,14 @@
   <NewExtensions>
     <extension index="0">extensions\DT - Controller Engine</extension>
     <extension index="1">extensions\DT - Script Library</extension>
+    <extension index="2">extensions\Extension7</extension>
   </NewExtensions>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_clock_face</sprite>
+    <sprite>sprites\spr_clock_bighand</sprite>
+    <sprite>sprites\spr_clock_smallhand</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -68,6 +73,7 @@
   <fonts name="fonts">
     <fonts name="DT - Script Library">
       <font>fonts\fnt_debug_font</font>
+      <font>fonts\fnt_counter</font>
     </fonts>
   </fonts>
   <objects name="objects">
@@ -78,11 +84,17 @@
       <object>objects\dt_obj_debug</object>
       <object>objects\dt_obj_timer</object>
     </objects>
-    <object>objects\obj_master</object>
+    <objects name="GAME">
+      <object>objects\obj_master</object>
+      <object>objects\obj_button</object>
+      <object>objects\obj_clock</object>
+      <object>objects\obj_rm_main_app</object>
+      <object>objects\obj_counter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_ini</room>
-    <room>rooms\rm_test1</room>
+    <room>rooms\rm_main_app</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
