@@ -13,5 +13,5 @@
 /*****
     Controllers
 *****/
-    dt_add_persistent_con( obj_master );
+    dt_add_persistent_con( obj_master, obj_push_notifications );
     dt_add_room_con( rm_main_app, obj_rm_main_app ); 

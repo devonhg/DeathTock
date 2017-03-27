@@ -6,13 +6,18 @@
   <NewExtensions>
     <extension index="0">extensions\DT - Controller Engine</extension>
     <extension index="1">extensions\DT - Script Library</extension>
-    <extension index="2">extensions\Extension7</extension>
+    <extension index="2">extensions\GooglePlayLicensingAsExt</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_tick</sound>
+    <sound>sound\snd_tock</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_clock_face</sprite>
     <sprite>sprites\spr_clock_bighand</sprite>
     <sprite>sprites\spr_clock_smallhand</sprite>
+    <sprite>sprites\spr_pen_weight</sprite>
+    <sprite>sprites\spr_pendulum</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -68,6 +73,7 @@
       <script>scripts\scr_calculate_days.gml</script>
       <script>scripts\scr_calculate_days_left.gml</script>
       <script>scripts\scr_globals.gml</script>
+      <script>scripts\scr_adj_width.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -90,6 +96,8 @@
       <object>objects\obj_clock</object>
       <object>objects\obj_rm_main_app</object>
       <object>objects\obj_counter</object>
+      <object>objects\obj_pendulum</object>
+      <object>objects\obj_push_notifications</object>
     </objects>
   </objects>
   <rooms name="rooms">

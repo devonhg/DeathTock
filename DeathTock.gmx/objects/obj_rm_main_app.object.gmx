@@ -53,7 +53,9 @@ var _x_cen = view_xview[0] + ( view_wview/2 ),
     _y_cen = view_yview[0] + ( view_hview/2 );
 
 
-instance_create( _x_cen, view_yview[0] + ( view_hview * .9 ), obj_clock ); 
+//instance_create( _x_cen, view_yview[0] + ( view_hview * .9 ), obj_clock ); 
+
+instance_create( _x_cen, -20, obj_pendulum ); 
 
 instance_create( _x_cen, view_yview[0] + 50, obj_counter ); 
 </string>
