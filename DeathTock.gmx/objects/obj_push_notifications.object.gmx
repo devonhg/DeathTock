@@ -29,7 +29,7 @@
 var data = "daily_reward";
 push_local_notification(fireTime, "Ahoy!", "Catch The Haggis Has A Present", data);
 
-show_message( "puppies" ); 
+//show_message( "puppies" ); 
 </string>
           </argument>
         </arguments>
