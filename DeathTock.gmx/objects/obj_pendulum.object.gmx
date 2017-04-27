@@ -55,7 +55,7 @@ on_tick = true;
             <kind>1</kind>
             <string>scr_adj_width( .2 );
 if( sprite_height &gt; view_hview ){
-    y -= ( sprite_height - view_hview )
+    y -= ( sprite_height - view_hview );
 }
 </string>
           </argument>
