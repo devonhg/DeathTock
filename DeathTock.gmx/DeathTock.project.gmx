@@ -19,6 +19,12 @@
     <sprite>sprites\spr_clock_smallhand</sprite>
     <sprite>sprites\spr_pen_weight</sprite>
     <sprite>sprites\spr_pendulum</sprite>
+    <sprites name="Icons">
+      <sprite>sprites\spr_icon_gears</sprite>
+      <sprite>sprites\spr_icon_feed</sprite>
+      <sprite>sprites\spr_icon_twitter</sprite>
+      <sprite>sprites\spr_icon_delete</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -71,10 +77,21 @@
     </scripts>
     <scripts name="GAME">
       <script>scripts\scr_ini.gml</script>
-      <script>scripts\scr_calculate_days.gml</script>
       <script>scripts\scr_calculate_days_left.gml</script>
       <script>scripts\scr_globals.gml</script>
       <script>scripts\scr_adj_width.gml</script>
+      <script>scripts\scr_add_button.gml</script>
+      <script>scripts\scr_check_data.gml</script>
+    </scripts>
+    <scripts name="Button Scripts">
+      <script>scripts\scr_test_script.gml</script>
+      <script>scripts\scr_open_overlay_menu.gml</script>
+      <script>scripts\scr_open_feedback.gml</script>
+      <script>scripts\scr_open_twitter.gml</script>
+      <script>scripts\scr_wipe_data.gml</script>
+    </scripts>
+    <scripts name="Junk">
+      <script>scripts\scr_calculate_days.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -82,6 +99,7 @@
       <font>fonts\fnt_debug_font</font>
       <font>fonts\fnt_counter</font>
     </fonts>
+    <font>fonts\fnt_gui</font>
   </fonts>
   <objects name="objects">
     <objects name="DT - Controller Manager">
@@ -92,13 +110,19 @@
       <object>objects\dt_obj_timer</object>
     </objects>
     <objects name="GAME">
-      <object>objects\obj_master</object>
-      <object>objects\obj_button</object>
-      <object>objects\obj_clock</object>
-      <object>objects\obj_rm_main_app</object>
-      <object>objects\obj_counter</object>
-      <object>objects\obj_pendulum</object>
-      <object>objects\obj_push_notifications</object>
+      <objects name="Junk">
+        <object>objects\obj_clock</object>
+      </objects>
+      <objects name="Controllers">
+        <object>objects\obj_rm_main_app</object>
+        <object>objects\obj_master</object>
+        <object>objects\obj_push_notifications</object>
+      </objects>
+      <objects name="Actors">
+        <object>objects\obj_button</object>
+        <object>objects\obj_counter</object>
+        <object>objects\obj_pendulum</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">

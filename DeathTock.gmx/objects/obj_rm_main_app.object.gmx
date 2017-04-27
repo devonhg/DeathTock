@@ -48,16 +48,88 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///Built Game Objects
+
 var _x_cen = view_xview[0] + ( view_wview/2 ),
     _y_cen = view_yview[0] + ( view_hview/2 );
-
-
-//instance_create( _x_cen, view_yview[0] + ( view_hview * .9 ), obj_clock ); 
 
 instance_create( _x_cen, -20, obj_pendulum ); 
 
 instance_create( _x_cen, view_yview[0] + 50, obj_counter ); 
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Add In Menu Items
+
+var gui_w = display_get_gui_width(),
+    gui_h = display_get_gui_height(),
+    gui_grd_shift_w = 0,
+    gui_grd_shift_h = .08,
+    gui_grd_w = gui_w/8 + (gui_grd_shift_w * (gui_w/8) ),
+    gui_grd_h = gui_h/8 + (gui_grd_shift_h * (gui_h/8) );
+
+scr_add_button( gui_grd_w * 7, gui_grd_h * 7, spr_icon_gears, scr_test_script, vk_up );
+scr_add_button( gui_grd_w * 6, gui_grd_h * 7, spr_icon_feed, scr_open_feedback, vk_down );
+scr_add_button( gui_grd_w * 5, gui_grd_h * 7, spr_icon_twitter, scr_open_twitter, vk_left );
+scr_add_button( gui_grd_w * 4, gui_grd_h * 7, spr_icon_delete, scr_wipe_data, vk_right );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Display Version and Textual Information
+
+var gui_w = display_get_gui_width(),
+    gui_h = display_get_gui_height();
+
+draw_set_alpha(.5);
+draw_rectangle( 0, gui_h - 160, gui_w, gui_h, false );
+draw_set_alpha(1); 
+    
+draw_set_font( fnt_gui );
+draw_set_valign( fa_middle );
+draw_set_color( c_gray );
+draw_text( 32, gui_h-64, global.version_rank + " - " + global.version );
+draw_set_color( c_black ); 
+draw_set_font( fnt_debug_font );
+
+
 </string>
           </argument>
         </arguments>

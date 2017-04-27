@@ -1,6 +1,6 @@
 ///scr_calculate_days_left();
 /*
-    This script returns the number of days until the entered date. 
+    This script returns the number of days until death day. 
 */
 
 var c = date_current_datetime(); 

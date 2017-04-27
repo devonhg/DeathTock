@@ -7,8 +7,8 @@
 /*****
     Scripts
 *****/
+    scr_check_data();
     scr_globals(); 
-
 
 /*****
     Controllers
