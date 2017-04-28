@@ -8,10 +8,12 @@
     <extension index="1">extensions\DT - Script Library</extension>
     <extension index="2">extensions\GooglePlayServicesExtension</extension>
     <extension index="3">extensions\GooglePlayLicensingAsExt</extension>
+    <extension index="4">extensions\inputTextEx</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_tick</sound>
     <sound>sound\snd_tock</sound>
+    <sound>sound\msc_main</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_clock_face</sprite>
@@ -24,6 +26,8 @@
       <sprite>sprites\spr_icon_feed</sprite>
       <sprite>sprites\spr_icon_twitter</sprite>
       <sprite>sprites\spr_icon_delete</sprite>
+      <sprite>sprites\spr_icon_calendar</sprite>
+      <sprite>sprites\spr_icon_sound</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -82,6 +86,7 @@
       <script>scripts\scr_adj_width.gml</script>
       <script>scripts\scr_add_button.gml</script>
       <script>scripts\scr_check_data.gml</script>
+      <script>scripts\scr_update_dd.gml</script>
     </scripts>
     <scripts name="Button Scripts">
       <script>scripts\scr_test_script.gml</script>
@@ -89,6 +94,10 @@
       <script>scripts\scr_open_feedback.gml</script>
       <script>scripts\scr_open_twitter.gml</script>
       <script>scripts\scr_wipe_data.gml</script>
+      <script>scripts\scr_load_menu_overlay.gml</script>
+      <script>scripts\scr_load_options_menu.gml</script>
+      <script>scripts\scr_edit_dd_day.gml</script>
+      <script>scripts\scr_toggle_music.gml</script>
     </scripts>
     <scripts name="Junk">
       <script>scripts\scr_calculate_days.gml</script>
@@ -117,11 +126,13 @@
         <object>objects\obj_rm_main_app</object>
         <object>objects\obj_master</object>
         <object>objects\obj_push_notifications</object>
+        <object>objects\obj_form_handler</object>
       </objects>
       <objects name="Actors">
         <object>objects\obj_button</object>
         <object>objects\obj_counter</object>
         <object>objects\obj_pendulum</object>
+        <object>objects\obj_menu_overlay</object>
       </objects>
     </objects>
   </objects>
