@@ -7,7 +7,7 @@
 //global.deathdate[1] = 11;//Month
 //global.deathdate[2] = 9;//Day
 
-global.version = "0.0.8";
+global.version = "0.0.9";
 global.version_rank = "indev";
 global.menu_open = false; 
 
