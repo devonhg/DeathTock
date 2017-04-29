@@ -34,6 +34,7 @@ w_adj = 0;
 h_adj = 64;
 grid_w = width/8 + w_adj;
 grid_h = height/8 + h_adj; 
+text = ""; 
 
 </string>
           </argument>
@@ -112,9 +113,15 @@ draw_set_halign( fa_center );
 draw_set_halign( fa_middle );
 draw_set_font( fnt_counter );
 draw_text( display_get_gui_width()/2, display_get_gui_height() * .06, title );
+
+draw_text_ext_transformed( width/2, grid_h * 2, text, height/20, width+(width/8), .7, .7, 0 );
+
 draw_set_font( fnt_debug_font ); 
 draw_set_halign( fa_bottom );
 draw_set_halign( fa_left );
+
+
+
 
 draw_set_color(c_999);
 //Draw Menu Border
@@ -130,6 +137,28 @@ dt_rect_outline_width(
 
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

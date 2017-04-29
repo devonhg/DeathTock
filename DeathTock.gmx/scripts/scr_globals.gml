@@ -10,6 +10,8 @@
 global.version = "0.0.9";
 global.version_rank = "indev";
 global.menu_open = false; 
+global.days_left = scr_calculate_days_left(); 
+
 
 //Enqueries
 global.update_day = -1;

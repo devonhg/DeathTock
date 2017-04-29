@@ -28,8 +28,8 @@
     <option_android_google_analytics>0</option_android_google_analytics>
     <option_android_google_analytics_enable>false</option_android_google_analytics_enable>
     <option_android_google_mobile_ads>0</option_android_google_mobile_ads>
-    <option_android_google_play>-1</option_android_google_play>
-    <option_android_google_play_cloud_save_enable>-1</option_android_google_play_cloud_save_enable>
+    <option_android_google_play>0</option_android_google_play>
+    <option_android_google_play_cloud_save_enable>0</option_android_google_play_cloud_save_enable>
     <option_android_google_play_id>737214476103</option_android_google_play_id>
     <option_android_google_tracking_id></option_android_google_tracking_id>
     <option_android_icade_support>-1</option_android_icade_support>
@@ -41,8 +41,8 @@
     <option_android_icon_xxxhdpi>Configs\Default\android\icons\icon_xxxhdpi.png</option_android_icon_xxxhdpi>
     <option_android_install_location>auto</option_android_install_location>
     <option_android_interpolate>-1</option_android_interpolate>
-    <option_android_licensing_enable>-1</option_android_licensing_enable>
-    <option_android_licensing_key>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiFGLHGZKmbIwIRj74600q4Otwvv5FV/yQhsxM0/48KLap91JeaO80w8w31PMFsc8FIFvVQlsS66n1a2LArj5GnfU7eTx9tJJQkNM1dG+fxH/MJgAMHEWcIEcNA2KAhWH+jGQE6ZUM2PMxexZk7R+SH+9n4uN26dHj4SdnpLdiDoAX06Nm5saIsFdo9nE5TQd03oCf+l36rPPv8R/JRhDp8rQFfOX1HASCCyS3wJYlQHYhCXibX2Z/HQifB4Da4E08CKrijIzfH8STUc2woHp/gy+xR8mNvk0pYrYRkTl1wET8YQhDxNfiPw5IEqq5/DigvQ/7Ag3CMe0vny13FC7MQIDAQAB</option_android_licensing_key>
+    <option_android_licensing_enable>0</option_android_licensing_enable>
+    <option_android_licensing_key></option_android_licensing_key>
     <option_android_lint>-1</option_android_lint>
     <option_android_major_version>1</option_android_major_version>
     <option_android_min_sdk_version>9</option_android_min_sdk_version>
@@ -61,13 +61,13 @@
     <option_android_package_product>DeathTock</option_android_package_product>
     <option_android_permission_flags>8</option_android_permission_flags>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
-    <option_android_push_enable>-1</option_android_push_enable>
+    <option_android_push_enable>0</option_android_push_enable>
     <option_android_push_id></option_android_push_id>
     <option_android_scale>-1</option_android_scale>
     <option_android_set_device_id></option_android_set_device_id>
     <option_android_sleep_margin>4</option_android_sleep_margin>
     <option_android_splash_png>Configs\Default\android\splash.png</option_android_splash_png>
-    <option_android_splash_time>0</option_android_splash_time>
+    <option_android_splash_time>4</option_android_splash_time>
     <option_android_support_lib_version>23.1.1</option_android_support_lib_version>
     <option_android_target_sdk_version>23</option_android_target_sdk_version>
     <option_android_texture_page>1024</option_android_texture_page>
