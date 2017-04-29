@@ -29,8 +29,13 @@
       <sprite>sprites\spr_icon_calendar</sprite>
       <sprite>sprites\spr_icon_sound</sprite>
     </sprites>
+    <sprites name="Backgrounds">
+      <sprite>sprites\spr_back_1</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_treetomb</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="DT - Controller Manager">

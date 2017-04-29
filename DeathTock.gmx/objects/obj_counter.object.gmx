@@ -47,10 +47,10 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 draw_set_alpha( .8 );
-draw_rectangle_colour(view_xview[0], y - 30, view_xview[0] + view_wview[0], y + 45, c_black, c_black, c_black, c_black, 0);
+draw_rectangle_colour(view_xview[0], y - 30, view_xview[0] + view_wview[0], y + 45, c_white, c_white, c_gray, c_gray, 0);
 draw_set_alpha( 1 );
 
-draw_set_color( c_white );
+draw_set_color( c_black );
     draw_set_font( fnt_counter );
     draw_text_ext_transformed( x, y-20, string( _days_left ), 0, 200, .25, .25, 0 );
     draw_text_ext_transformed( x, y + 10, _days_text, 0, 700, .1, .1, 0 );

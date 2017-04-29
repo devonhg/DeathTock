@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -133,6 +133,58 @@ draw_set_color( c_black );
 draw_set_font( fnt_debug_font );
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw Background
+
+//Work out what to scale it to. 
+var _scl = view_wview/sprite_get_width( spr_back_1 ),
+    _c_39 = make_color_rgb(39,39,39),
+    _sprt_h = _scl * sprite_get_height( spr_back_1 );
+
+draw_sprite_ext( 
+    spr_back_1, 
+    0, 
+    view_xview + (view_wview/2), 
+    view_yview + (view_hview/2),
+    _scl,
+    _scl,
+    0,
+    -1,
+    1
+);
+
+draw_set_color( _c_39 );
+
+draw_rectangle( 
+    view_xview, 
+    ( view_yview + (view_hview/2) ) + ( _sprt_h/2 ),
+    view_xview + view_wview,
+    ( view_yview + (view_hview) ),
+    false
+);
+
+draw_set_color(-1);
 </string>
           </argument>
         </arguments>
