@@ -6,7 +6,6 @@
   <NewExtensions>
     <extension index="0">extensions\DT - Controller Engine</extension>
     <extension index="1">extensions\DT - Script Library</extension>
-    <extension index="2">extensions\GooglePlayServicesExtension</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_tick</sound>
@@ -19,6 +18,7 @@
     <sprite>sprites\spr_clock_smallhand</sprite>
     <sprite>sprites\spr_pen_weight</sprite>
     <sprite>sprites\spr_pendulum</sprite>
+    <sprite>sprites\spr_pendulum_origina</sprite>
     <sprites name="Icons">
       <sprite>sprites\spr_icon_gears</sprite>
       <sprite>sprites\spr_icon_feed</sprite>
@@ -27,6 +27,8 @@
       <sprite>sprites\spr_icon_calendar</sprite>
       <sprite>sprites\spr_icon_sound</sprite>
       <sprite>sprites\spr_icon_letter</sprite>
+      <sprite>sprites\spr_icon_pencil</sprite>
+      <sprite>sprites\spr_icon_question</sprite>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\spr_back_1</sprite>
@@ -94,6 +96,10 @@
       <script>scripts\scr_display_qod.gml</script>
       <script>scripts\scr_update_days_left.gml</script>
       <script>scripts\scr_update_date_globals.gml</script>
+      <script>scripts\scr_fetch_qod.gml</script>
+      <script>scripts\scr_quote_database.gml</script>
+      <script>scripts\scr_save_pms.gml</script>
+      <script>scripts\scr_refresh_overlay.gml</script>
     </scripts>
     <scripts name="Button Scripts">
       <script>scripts\scr_test_script.gml</script>

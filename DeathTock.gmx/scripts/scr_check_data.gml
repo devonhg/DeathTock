@@ -1,5 +1,7 @@
 ini_open("save_data.ini");
 
+//ini_write_string(  "mission", "pms", "Enter your Personal Mission Statement" );
+
 if( ini_key_exists( "death_date", "year" ) ){
     global.first_run = false; 
     //show_message( "loading data" )
@@ -13,6 +15,7 @@ if( ini_key_exists( "death_date", "year" ) ){
     ini_write_real(  "death_date", "year", _year );
     ini_write_real(  "death_date", "month", _month );
     ini_write_real(  "death_date", "day", _day );
+    ini_write_string(  "mission", "pms", "Enter your Personal Mission Statement" );
     //ini_write_real(  "death_date", "days_left", 3650 );
     //show_message("first run")
 }
@@ -20,6 +23,7 @@ if( ini_key_exists( "death_date", "year" ) ){
 global.deathdate[0] = ini_read_real( "death_date", "year", 2026 );//Year
 global.deathdate[1] = ini_read_real( "death_date", "month", 11 );//Month
 global.deathdate[2] = ini_read_real("death_date", "day", 9 );//Day
+global.pms = ini_read_string("mission", "pms", "Enter your Personal Mission Statement" );
 //global.days_left_since = ini_read_real( "death_date", "days_left", 3650 );
 
 ini_close(); 

@@ -8,8 +8,10 @@ if( !instance_exists( obj_menu_overlay ) ){
         inst.text = argument[2];
     }
     
+    inst.script = argument[1];
+    
     //Pass the object id into the script so that
-    script_execute( argument[1], inst );
+    //script_execute( argument[1], inst );
 }
 
 

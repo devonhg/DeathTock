@@ -9,6 +9,7 @@
 *****/
     scr_check_data();
     scr_globals(); 
+    scr_quote_database()
 
 /*****
     Controllers

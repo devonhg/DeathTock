@@ -3,19 +3,19 @@
 */
 
 //deathdate is to be an array containing each date piece of the day of death. 
-//global.deathdate[0] = 2026;//Year
-//global.deathdate[1] = 11;//Month
-//global.deathdate[2] = 9;//Day
-
-global.version = "0.0.9";
+global.version = "0.1.0";
 global.version_rank = "indev";
 global.menu_open = false; 
 global.days_left = scr_calculate_days_left(); 
+global.qdb = -1;//Quote Database
+global.qod = "";//The quote of the day
+//global.pms = "";
 
 
 //Enqueries
 global.update_day = -1;
 global.update_month = -1; 
 global.update_year = -1; 
+global.update_pms = -1; 
 
 //global.first_run = false; 

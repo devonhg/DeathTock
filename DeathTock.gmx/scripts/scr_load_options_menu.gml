@@ -14,7 +14,7 @@ scr_add_button(
     scr_edit_dd_day, 
     ord("E"), 
     true,
-    "Update Day"
+    "Change Day"
 );
 
 scr_add_button( 
@@ -24,7 +24,7 @@ scr_add_button(
     scr_edit_dd_month, 
     ord("C"), 
     true,
-    "Update Month"
+    "Change Month"
 );
 
 scr_add_button( 
@@ -34,5 +34,5 @@ scr_add_button(
     scr_edit_dd_year, 
     ord("D"), 
     true,
-    "Update Year"
+    "Change Year"
 );
