@@ -6,6 +6,7 @@
   <NewExtensions>
     <extension index="0">extensions\DT - Controller Engine</extension>
     <extension index="1">extensions\DT - Script Library</extension>
+    <extension index="2">extensions\GooglePlayServicesExtension</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_tick</sound>
@@ -86,20 +87,27 @@
       </scripts>
     </scripts>
     <scripts name="GAME">
-      <script>scripts\scr_ini.gml</script>
       <script>scripts\scr_calculate_days_left.gml</script>
-      <script>scripts\scr_globals.gml</script>
       <script>scripts\scr_adj_width.gml</script>
       <script>scripts\scr_add_button.gml</script>
-      <script>scripts\scr_check_data.gml</script>
       <script>scripts\scr_update_dd.gml</script>
-      <script>scripts\scr_display_qod.gml</script>
       <script>scripts\scr_update_days_left.gml</script>
       <script>scripts\scr_update_date_globals.gml</script>
-      <script>scripts\scr_fetch_qod.gml</script>
-      <script>scripts\scr_quote_database.gml</script>
       <script>scripts\scr_save_pms.gml</script>
       <script>scripts\scr_refresh_overlay.gml</script>
+      <script>scripts\scr_check_notifications.gml</script>
+      <scripts name="Quote Of The Day And Quote DB">
+        <script>scripts\scr_open_qod.gml</script>
+        <script>scripts\scr_fetch_qod.gml</script>
+        <script>scripts\scr_quote_database.gml</script>
+      </scripts>
+      <scripts name="Ini">
+        <script>scripts\scr_ini.gml</script>
+        <script>scripts\scr_ini_precheck.gml</script>
+        <script>scripts\scr_globals.gml</script>
+        <script>scripts\scr_check_data.gml</script>
+        <script>scripts\scr_ini_postcheck.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Button Scripts">
       <script>scripts\scr_test_script.gml</script>

@@ -7,9 +7,11 @@
 /*****
     Scripts
 *****/
+    scr_ini_precheck(); 
     scr_check_data();
     scr_globals(); 
-    scr_quote_database()
+    scr_quote_database();
+    scr_ini_postcheck(); 
 
 /*****
     Controllers

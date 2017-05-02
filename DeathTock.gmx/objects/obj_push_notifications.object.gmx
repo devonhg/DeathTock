@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var fireTime = date_inc_second(date_current_datetime(), 15);
-var data = "daily_reward";
+            <string>/*
+var fireTime = date_inc_second(date_current_datetime(), 15);
+var data = "daily_notification";
 push_local_notification(fireTime, "Ahoy!", "Catch The Haggis Has A Present", data);
+*/
+
 
 //show_message( "puppies" ); 
 </string>
@@ -52,7 +55,20 @@ push_local_notification(fireTime, "Ahoy!", "Catch The Haggis Has A Present", dat
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//show_message("notification pushed"); 
+            <string>var type = ds_map_find_value(async_load, "type");
+var status = ds_map_find_value(async_load, "status");
+var data = ds_map_find_value( async_load, "data" );
+
+if status == 0{
+    //error of some kind
+    var error = ds_map_find_value(async_load, "error");
+    show_debug_message("error=" + string(error));
+}else{
+    if( data == "daily_notification" ){
+       scr_change_qod();
+       scr_open_qod(); 
+    }
+}
 </string>
           </argument>
         </arguments>

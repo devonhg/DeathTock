@@ -28,7 +28,7 @@
     <option_android_google_analytics>0</option_android_google_analytics>
     <option_android_google_analytics_enable>false</option_android_google_analytics_enable>
     <option_android_google_mobile_ads>0</option_android_google_mobile_ads>
-    <option_android_google_play>0</option_android_google_play>
+    <option_android_google_play>-1</option_android_google_play>
     <option_android_google_play_cloud_save_enable>0</option_android_google_play_cloud_save_enable>
     <option_android_google_play_id>737214476103</option_android_google_play_id>
     <option_android_google_tracking_id></option_android_google_tracking_id>
@@ -61,7 +61,7 @@
     <option_android_package_product>DeathTock</option_android_package_product>
     <option_android_permission_flags>8</option_android_permission_flags>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
-    <option_android_push_enable>0</option_android_push_enable>
+    <option_android_push_enable>-1</option_android_push_enable>
     <option_android_push_id></option_android_push_id>
     <option_android_scale>-1</option_android_scale>
     <option_android_set_device_id></option_android_set_device_id>

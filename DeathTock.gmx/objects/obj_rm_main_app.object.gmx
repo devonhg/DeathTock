@@ -93,7 +93,7 @@ scr_add_button( gui_grd_w * 7, gui_grd_h * 7, spr_icon_gears, scr_load_options_m
 scr_add_button( gui_grd_w * 6, gui_grd_h * 7, spr_icon_feed, scr_open_feedback, vk_down );
 scr_add_button( gui_grd_w * 5, gui_grd_h * 7, spr_icon_twitter, scr_open_twitter, vk_left );
 //scr_add_button( gui_grd_w * 4, gui_grd_h * 7, spr_icon_delete, scr_wipe_data, vk_right );
-scr_add_button( gui_grd_w * 4, gui_grd_h * 7, spr_icon_letter, scr_display_qod, ord("P") );
+scr_add_button( gui_grd_w * 4, gui_grd_h * 7, spr_icon_letter, scr_open_qod, ord("P") );
 //scr_add_button( gui_grd_w * 3, gui_grd_h * 7, spr_icon_sound, scr_toggle_music, ord("B") );
 </string>
           </argument>
