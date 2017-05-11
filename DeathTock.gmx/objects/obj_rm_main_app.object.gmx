@@ -50,7 +50,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Built Game Objects
+            <string>///Build Game Objects
 
 var _x_cen = view_xview[0] + ( view_wview/2 ),
     _y_cen = view_yview[0] + ( view_hview/2 );
