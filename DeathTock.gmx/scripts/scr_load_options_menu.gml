@@ -36,3 +36,23 @@ scr_add_button(
     true,
     "Change Year"
 );
+
+scr_add_button( 
+    _w_grd * 2, 
+    _h_grd * 4, 
+    spr_icon_calendar, 
+    scr_wipe_data, 
+    ord("L"), 
+    true,
+    "Clear Data"
+);
+
+scr_add_button( 
+    _w_grd * 5, 
+    _h_grd, 
+    spr_icon_calendar, 
+    scr_open_moreinfo, 
+    ord("U"), 
+    true,
+    "About This App"
+);

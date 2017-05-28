@@ -3,6 +3,7 @@
 */
 
     draw_set_font( fnt_debug_font ); 
+    randomize(); 
 
 /*****
     Scripts

@@ -37,8 +37,8 @@ scr_add_button(
 
 #define scr_button_edit_pms
 ///scr_button_edit_pms()
-if( global.update_pms = -1 ){
-    global.update_pms = get_string_async("Edit your Personal Mission Statement, Keep it to one sentence.", global.pms);
+if( global.update_pms == -1 ){
+    global.update_pms = get_string_async("Edit your Personal Mission Statement, Keep it to one sentence. 140 character limit.", global.pms);
 }
 
 #define scr_button_learn_pms

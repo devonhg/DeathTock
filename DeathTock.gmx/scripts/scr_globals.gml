@@ -3,7 +3,7 @@
 */
 
 //deathdate is to be an array containing each date piece of the day of death. 
-global.version = "0.1.2";
+global.version = "0.1.3";
 global.version_rank = "indev";
 global.menu_open = false; 
 global.days_left = scr_calculate_days_left(); 
