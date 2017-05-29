@@ -19,8 +19,8 @@ for( i = 1; i < 7; i++ ){
     show_debug_message( string( ntf ) );   
 }
 */
-
-if( ds_map_find_value(map, "title") != undefined ){
+show_message( map );
+if( ntf = -1 ){
     var _next_date = date_inc_day(_date, 1);
     push_local_notification( _next_date, "A New Day", "Inspect todays quote and updated your mission.", "daily_notification" );
 }
